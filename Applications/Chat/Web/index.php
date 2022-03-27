@@ -29,7 +29,7 @@
     // 連接服務端
     function connect() {
        // 創建websocket
-       ws = new WebSocket("ws://"+document.domain+":7272");
+       ws = new WebSocket("wss://"+document.domain+":7272");
        // 當socket連接打開時，輸入用戶名
        ws.onopen = onopen;
        // 當有消息時根據消息類型顯示不同資訊
